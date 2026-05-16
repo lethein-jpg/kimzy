@@ -180,7 +180,6 @@ const COLORS: Record<string, string> = {
   'v': '#FFADAD', // Mouth/Nose
   'B': '#FFB6C1', // Blush
   'H': '#FF69B4', // Pink Hair
-  'B': '#4B2C20', // Brown Hair (Wait, B is used for blush too, let's change brown hair to C)
   'C': '#4B2C20', // Brown Hair
   'Y': '#FFD700', // Blonde
   'D': '#9370DB', // Purple Dress
