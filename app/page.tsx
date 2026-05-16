@@ -1,11 +1,14 @@
 import React from 'react';
 import VectorGame from '@/components/VectorGame';
-import Guestbook from '@/components/Guestbook';
 import TrendlineGame from '@/components/TrendlineGame';
+import Guestbook from '@/components/Guestbook';
+import AssignmentSubmit from '@/components/AssignmentSubmit';
 import { getGuestbookEntries } from '@/app/actions/guestbook';
+import { getAssignments } from '@/app/actions/assignments';
 
 export default async function Home() {
   const entries = await getGuestbookEntries();
+  const assignments = await getAssignments();
 
   return (
     <div className="flex flex-col items-center justify-center flex-1 w-full px-4 text-center sm:px-6 lg:px-8 py-20">
@@ -29,6 +32,11 @@ export default async function Home() {
       {/* 추세선 게임 컴포넌트 (AI 수학) */}
       <section className="w-full max-w-4xl animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-400">
         <TrendlineGame />
+      </section>
+
+      {/* 과제 제출방 컴포넌트 (Neon DB 연동) */}
+      <section className="w-full max-w-4xl animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-450">
+        <AssignmentSubmit initialAssignments={assignments} />
       </section>
 
       {/* 방명록 컴포넌트 (Neon DB 연동) */}
