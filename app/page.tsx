@@ -1,5 +1,6 @@
 import React from 'react';
 import PixelDressUp from '@/components/PixelDressUp';
+import MathChatbot from '@/components/MathChatbot';
 
 export default function Home() {
   return (
@@ -16,6 +17,11 @@ export default function Home() {
       {/* The Game */}
       <section className="w-full max-w-5xl animate-in fade-in zoom-in duration-1000">
         <PixelDressUp />
+      </section>
+
+      {/* AI Math Chatbot */}
+      <section className="w-full max-w-5xl animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
+        <MathChatbot />
       </section>
 
       {/* Instructions / Footer */}
