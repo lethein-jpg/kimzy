@@ -1,6 +1,7 @@
 import React from 'react';
 import VectorGame from '@/components/VectorGame';
 import Guestbook from '@/components/Guestbook';
+import TrendlineGame from '@/components/TrendlineGame';
 import { getGuestbookEntries } from '@/app/actions/guestbook';
 
 export default async function Home() {
@@ -23,6 +24,11 @@ export default async function Home() {
       {/* 벡터 게임 컴포넌트 */}
       <section className="w-full max-w-4xl mt-12 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
         <VectorGame />
+      </section>
+
+      {/* 추세선 게임 컴포넌트 (AI 수학) */}
+      <section className="w-full max-w-4xl animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-400">
+        <TrendlineGame />
       </section>
 
       {/* 방명록 컴포넌트 (Neon DB 연동) */}
