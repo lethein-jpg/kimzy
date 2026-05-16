@@ -130,7 +130,7 @@ export default function VectorGame() {
           <div className="space-y-2">
             <label className="text-sm font-medium text-slate-500 dark:text-slate-400">문제</label>
             <p className="text-xl font-bold dark:text-white">
-              <span className="text-blue-600">$\vec{a}$</span>와 <span className="text-red-500">$\vec{b}$</span>의 내적 $\vec{a} \cdot \vec{b}$를 구하세요.
+              <span className="text-blue-600">$\vec{"{a}"}$</span>와 <span className="text-red-500">$\vec{"{b}"}$</span>의 내적 $\vec{"{a}"} \cdot \vec{"{b}"}$를 구하세요.
             </p>
             <p className="text-sm text-slate-400 italic">힌트: $x_1x_2 + y_1y_2$</p>
           </div>
