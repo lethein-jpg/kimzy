@@ -1,4 +1,5 @@
 import React from 'react';
+import VectorGame from '@/components/VectorGame';
 
 export default function Home() {
   return (
@@ -27,12 +28,11 @@ export default function Home() {
       </section>
 
       {/* 여기에 새로운 컴포넌트를 추가하세요 */}
-      {/* 예: 
-        <FeatureSection />
-        <CourseList />
-        <Testimonials />
-      */}
-      <div className="mt-24 p-8 border border-dashed border-slate-300 dark:border-slate-700 rounded-2xl bg-slate-50/50 dark:bg-slate-900/50 w-full max-w-4xl flex items-center justify-center min-h-[200px]">
+      <section className="w-full max-w-4xl mt-12 animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-300">
+        <VectorGame />
+      </section>
+
+      <div className="mt-12 p-8 border border-dashed border-slate-300 dark:border-slate-700 rounded-2xl bg-slate-50/50 dark:bg-slate-900/50 w-full max-w-4xl flex items-center justify-center min-h-[100px]">
         <p className="text-slate-500 dark:text-slate-400 font-medium">
           // 여기에 새로운 컴포넌트가 렌더링될 수 있습니다
         </p>
